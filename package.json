@@ -1,0 +1,27 @@
+{
+  "name": "payment",
+  "version": "1.0.0",
+  "description": "payment back end service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh-susinth/paymentBackEnd.git"
+  },
+  "author": "Josh Susinth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josh-susinth/paymentBackEnd/issues"
+  },
+  "homepage": "https://github.com/josh-susinth/paymentBackEnd#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "mongodb": "^6.3.0"
+  }
+}
