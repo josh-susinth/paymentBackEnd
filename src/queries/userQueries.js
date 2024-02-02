@@ -11,8 +11,19 @@ const insertUser = async (user) => {
     }
 }
 
+const getUser = async (mailId) => {
+    try {
+        const user = await userCollection.findOne({ email: mailId });
+        return user;
+    }
+    catch (e) {
+        console.log(e);
+    }
+}
+
 const USER = {
-    insertUser : insertUser
+    insertUser: insertUser,
+    getUser: getUser
 }
 
 module.exports = USER;
